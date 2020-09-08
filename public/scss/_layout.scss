@@ -14,12 +14,19 @@ body {
   font-family: "Mulish", sans-serif;
   font-size: 14px;
   color: #333333;
+  background-image: url('/public/img/texture.png');
+  background-color: #feffff;
 }
 
 a {
   font-family: "Mulish", sans-serif;
   font-size: 14px;
-  color: #2c9696;
+  color: #2C9696;
+  transition: color 0.1s linear;
+
+  &:hover {
+    color: darken(#2C9696, 15%);
+  }
 }
 
 #overlay {
@@ -34,8 +41,10 @@ a {
 }
 
 .header {
+  background-color: white;
   padding: 0.5rem 1rem;
   border-bottom: 1px solid #CCCCCC;
+  box-shadow: 1px 0 4px rgba(0, 0, 0, 0.07);
 
   &__logo {
     font-weight: bold;
