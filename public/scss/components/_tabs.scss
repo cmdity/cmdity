@@ -1,0 +1,38 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #CCCCCC;
+
+  & a {
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+    background: #EFEFEF;
+    padding: 0.7rem;
+    margin-right: 1.5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active, &:hover {
+      background: #2c9696;
+      color: white;
+    }
+  }
+}
+
+.tabs-info {
+  background: #EFEFEF;
+  padding: 0.7rem 0.5rem;
+
+  & a {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  & span {
+    color: #B0B0B0;
+    padding: 0 0.5rem;
+  }
+}
