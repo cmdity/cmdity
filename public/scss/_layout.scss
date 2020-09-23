@@ -7,7 +7,7 @@
 
 html {
   font-size: 14px;
-  line-height: 0.9rem;
+  line-height: 1.5rem;
 }
 
 body {
@@ -25,6 +25,10 @@ a {
   &:hover {
     color: darken(#2C9696, 20%);
   }
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 #overlay {
@@ -74,5 +78,105 @@ a {
 
   & .tabs {
     margin-top: 2rem;
+  }
+
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  &__latest-commits {
+    list-style: none;
+    width: 520px;
+
+    & li {
+      display: block;
+      background-color: #EFEFEF;
+      border: 1px solid #CCCCCC;
+      border-radius: 4px;
+      padding: 0.7rem 0.5rem;
+      margin-bottom: 1.2rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.7rem;
+
+        & p {
+          &:first-child {
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        & a {
+          font-weight: bold;
+          margin-right: 0.3rem;
+        }
+
+        & img {
+          margin-left: 0.3rem;
+          margin-right: 0.3rem;
+        }
+      }
+    }
+  }
+
+  &__clone {
+    width: 390px;
+
+    &__title {
+      font-weight: bold;
+      margin-bottom: 0.7rem;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.7rem;
+
+      &:nth-child(2) {
+        & span {
+          margin-right: 2.2rem;
+        }
+      }
+
+      &:last-child {
+        & span {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid #CCCCCC;
+  padding: 0.4rem 0.5rem;
+  width: 100%;
+}
+
+.readme {
+  margin-top: 2rem;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+
+  &__title {
+    font-weight: bold;
+    padding: 0.7rem 0.5rem;
+    background-color: #EFEFEF;
+    border-bottom: 1px solid #CCCCCC;
+  }
+
+  &__content {
+    padding: 0.7rem 0.5rem;
   }
 }
