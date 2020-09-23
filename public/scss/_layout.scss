@@ -106,7 +106,7 @@ p {
       background-color: #EFEFEF;
       border: 1px solid #CCCCCC;
       border-radius: 4px;
-      padding: 0.7rem 0.5rem;
+      padding: 0.7rem;
       margin-bottom: 1.2rem;
 
       &:last-child {
@@ -148,20 +148,10 @@ p {
     }
 
     &__item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 0.7rem;
-
-      &:nth-child(2) {
-        & span {
-          margin-right: 2.2rem;
-        }
-      }
-
-      &:last-child {
-        & span {
-          margin-right: 1rem;
-        }
+      margin-bottom: 1rem;
+      
+      & span {
+        font-weight: bold;
       }
     }
   }
@@ -171,8 +161,9 @@ input[type="text"], input[type="email"], input[type="password"] {
   font-size: 14px;
   border-radius: 2px;
   border: 1px solid #CCCCCC;
-  padding: 0.4rem 0.5rem;
+  padding: 0.5rem;
   width: 100%;
+  box-shadow: inset 0 0 7px rgba(103, 92, 16, 0.1);
 }
 
 .readme {
@@ -182,12 +173,14 @@ input[type="text"], input[type="email"], input[type="password"] {
 
   &__title {
     font-weight: bold;
-    padding: 0.7rem 0.5rem;
+    padding: 0.7rem;
     background-color: #EFEFEF;
     border-bottom: 1px solid #CCCCCC;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
   }
 
   &__content {
-    padding: 0.7rem 0.5rem;
+    padding: 0.7rem;
   }
 }
